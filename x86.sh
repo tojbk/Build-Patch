@@ -1,4 +1,5 @@
 #/bin/bash
+# 仓库 https://github.com/281677160/openwrt-package 修改
 
 function TIME() {
 Compte=$(date +%Y年%m月%d号%H时%M分)
