@@ -21,7 +21,7 @@ Compte=$(date +%Y年%m月%d号%H时%M分)
 }
 
 TIME b "首页微调"
-curl -fsSL https://raw.githubusercontent.com/tojbk/Build-OpenWrt/main/build/Lede/files/package/lean/autocore/files/x86/index.htm > ${HOME_PATH}/package/lean/autocore/files/x86/index.htm
+curl -fsSL https://raw.githubusercontent.com/tojbk/Build-Patch/main/index.htm > ${HOME_PATH}/package/lean/autocore/files/x86/index.htm
 TIME b "修改主题VPN菜单为GFW"
 sed -i 's/VPN/GFW/g' ${HOME_PATH}/feeds/danshui/luci-theme-atmaterial_new/htdocs/luci-static/atmaterial_Brown/css/style.css
 sed -i '3,4d' ${HOME_PATH}/feeds/danshui/luci-theme-atmaterial_new/root/etc/uci-defaults/30_luci-theme-atmaterial_new
