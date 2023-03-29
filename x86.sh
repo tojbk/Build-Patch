@@ -26,6 +26,7 @@ TIME b "修改主题VPN菜单为GFW"
 sed -i 's/VPN/GFW/g' ${HOME_PATH}/feeds/danshui/luci-theme-atmaterial_new/htdocs/luci-static/atmaterial_Brown/css/style.css
 sed -i '3,4d' ${HOME_PATH}/feeds/danshui/luci-theme-atmaterial_new/root/etc/uci-defaults/30_luci-theme-atmaterial_new
 sed -i 's/VPN/GFW/g' ${HOME_PATH}/feeds/danshui/luci-theme-design/htdocs/luci-static/design/css/style.css
+sed -i 's/VPN/GFW/g' ${HOME_PATH}/feeds/danshui/luci-theme-opentomcat/files/htdocs/css/style.css
 TIME b "插件重命名"
 sed -i 's/解除网易云音乐播放限制/音乐解锁/g' ${HOME_PATH}/feeds/danshui/luci-app-unblockneteasemusic/luasrc/controller/unblockneteasemusic.lua
 sed -i 's/msgstr "UPnP"/msgstr "UPnP设置"/g' ${HOME_PATH}/feeds/luci/applications/luci-app-upnp/po/zh-cn/upnp.po
