@@ -34,6 +34,10 @@ sed -i 's/PassWall/Pass Wall/g' ${HOME_PATH}/feeds/passwall1/luci-app-passwall/p
 sed -i 's/msgstr "FTP 服务器"/msgstr "FTP 服务"/g' ${HOME_PATH}/feeds/luci/applications/luci-app-vsftpd/po/zh-cn/vsftpd.po
 sed -i 's/文件管理器/文件管理/g' ${HOME_PATH}/feeds/danshui/luci-app-filebrowser/luasrc/controller/filebrowser.lua
 sed -i 's/msgstr "Socat"/msgstr "端口转发"/g' ${HOME_PATH}/feeds/danshui/luci-app-socat/po/zh-cn/socat.po
+sed -i 's/EQoS/网速限制/g' ${HOME_PATH}/feeds/danshui/eqos-master-wiwiz/files/eqos-controller.lua
+
+TIME b "调整 luci-app-eqos 到 管控 菜单"
+sed -i 's/network/control/g' ${HOME_PATH}/feeds/danshui/eqos-master-wiwiz/files/eqos-controller.lua
 TIME b "调整 luci-app-ssr-plus 到 GFW 菜单"
 sed -i 's/services/vpn/g' ${HOME_PATH}/feeds/helloworld/luci-app-ssr-plus/luasrc/controller/*.lua
 sed -i 's/services/vpn/g' ${HOME_PATH}/feeds/helloworld/luci-app-ssr-plus/luasrc/model/cbi/shadowsocksr/*.lua
